@@ -13,6 +13,8 @@ import CoreData
 
 class ImageLoaderVC: UIViewController {
 
+    var image: UIImage? = nil
+    
     // MARK: - Outlets
     
     @IBOutlet weak var imageView: UIImageView!
@@ -25,20 +27,32 @@ class ImageLoaderVC: UIViewController {
         urlTextField.resignFirstResponder()
         if let urlTextField = self.urlTextField.text {
             if urlTextField.isEmpty == false {
-                if validateURL(from: urlTextField) {
-                    startAnimateImageView(with: true)
-                    downloadImage(from: URL(string: urlTextField)!)
-                    
-                } else {
-                    showAllert(message: "Invalid URL")
-                }
+                startAnimateImageView(with: true)
+                
                 
             } else {
                 showAllert(message: "Please Enter the URL to get the Image")
             }
         }
     }
-
+    
+    func update(withImage newImage: UIImage) {
+        image = newImage
+        
+        if let urlTextField = urlTextField.text, let theURL = URL(string: urlTextField) {
+        
+            ImageManager.shared.requestImage(URL: theURL) { [weak self] data, resivedImageURL in
+                guard let weakSelf = self else { return }
+                
+                DispatchQueue.main.async {
+                    weakSelf.imageView.image = UIImage(data: data)
+                }
+                
+            }
+        }
+        
+    }
+    
     func showAllert(message: String) {
         let alertView = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -46,46 +60,6 @@ class ImageLoaderVC: UIViewController {
         self.present(alertView, animated: true, completion: nil)
     }
     
-    
-    
-    
-    func downloadImage(from url: URL) {
-        
-        let sesion = URLSession.shared
-        
-        let task = sesion.dataTask(with: url) { (data, responce, error) in
-            
-            if let data = data {
-                let downloadedImage = UIImage(data: data)
-                
-                DispatchQueue.main.async {
-                    self.startAnimateImageView(with: false)
-                    self.imageView.image = downloadedImage
-                }
-                
-            } else {
-                
-                
-                
-//                if let responce = responce?.mimeType {
-//                    if responce != "image/png" || responce != "image/jpeg" || responce != "image/gif" || responce != "image/bmp" || responce != "image/tiff" {
-//                        self.showAllert(message: "Invalid Image file type")
-//
-//                    }
-//                }
-            }
-            
-        }
-        
-        task.resume()
-        
-    }
-    
-    // MARK: - Helper method
-    func validateURL(from url: String) -> Bool {
-        let urlRegEx = "(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+"
-        return NSPredicate(format: "SELF MATCHES %@", urlRegEx).evaluate(with: url)
-    }
     
     // MARK: - Life Cycle methods of the View
     
