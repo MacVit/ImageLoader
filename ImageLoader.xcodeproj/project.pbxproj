@@ -14,7 +14,6 @@
 		FE1C3A9D20D2A0D000FA43EE /* ImageLoader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE1C3A9B20D2A0D000FA43EE /* ImageLoader.xcdatamodeld */; };
 		FE1C3A9F20D2A0E300FA43EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE1C3A9E20D2A0E300FA43EE /* Assets.xcassets */; };
 		FE1C3AA220D2A0E300FA43EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1C3AA020D2A0E300FA43EE /* LaunchScreen.storyboard */; };
-		FE1E1C5D20D6ECD500BB6F5F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1E1C5C20D6ECD500BB6F5F /* NetworkService.swift */; };
 		FE1E1C5F20D7047F00BB6F5F /* DiscardableCacheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1E1C5E20D7047F00BB6F5F /* DiscardableCacheItem.swift */; };
 		FE1E1C6120D7053000BB6F5F /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1E1C6020D7053000BB6F5F /* Cache.swift */; };
 		FE1E1C6320D707B200BB6F5F /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1E1C6220D707B200BB6F5F /* ImageManager.swift */; };
@@ -32,7 +31,6 @@
 		FE1C3A9E20D2A0E300FA43EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE1C3AA120D2A0E300FA43EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE1C3AA320D2A0E300FA43EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE1E1C5C20D6ECD500BB6F5F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FE1E1C5E20D7047F00BB6F5F /* DiscardableCacheItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardableCacheItem.swift; sourceTree = "<group>"; };
 		FE1E1C6020D7053000BB6F5F /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		FE1E1C6220D707B200BB6F5F /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 			children = (
 				FE1C3A9420D2A0D000FA43EE /* AppDelegate.swift */,
 				FE1C3A9620D2A0D000FA43EE /* ImageLoaderVC.swift */,
-				FE1E1C5C20D6ECD500BB6F5F /* NetworkService.swift */,
 				FE1C3A9820D2A0D000FA43EE /* Main.storyboard */,
 				FE1C3A9E20D2A0E300FA43EE /* Assets.xcassets */,
 				FE1C3AA020D2A0E300FA43EE /* LaunchScreen.storyboard */,
@@ -219,7 +216,6 @@
 				FE1E1C5F20D7047F00BB6F5F /* DiscardableCacheItem.swift in Sources */,
 				FE1E1C6320D707B200BB6F5F /* ImageManager.swift in Sources */,
 				FE1C3A9520D2A0D000FA43EE /* AppDelegate.swift in Sources */,
-				FE1E1C5D20D6ECD500BB6F5F /* NetworkService.swift in Sources */,
 				FE1E1C6120D7053000BB6F5F /* Cache.swift in Sources */,
 				FE1C3A9D20D2A0D000FA43EE /* ImageLoader.xcdatamodeld in Sources */,
 			);
