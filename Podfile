@@ -8,6 +8,6 @@ target 'ImageLoader' do
   use_frameworks!
 
   # Pods for ImageLoader
-  pod "SkeletonView"
+  pod 'SkeletonView'
 
 end

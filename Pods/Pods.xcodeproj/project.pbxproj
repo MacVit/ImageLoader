@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -52,7 +52,7 @@
 		072164ACC71DD9B2529CFD77677AE35A /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+IBInspectable.swift"; path = "Sources/Extensions/UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		13C76C02295B4A6A2249E4B7544074D3 /* Pods-ImageLoader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImageLoader-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1A5D781211862404DB96A5754537EA2A /* Pods-ImageLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImageLoader-umbrella.h"; sourceTree = "<group>"; };
-		1A9B97059B2B3AA84B4C0B73FDA505EB /* SkeletonView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkeletonView.framework; path = SkeletonView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9B97059B2B3AA84B4C0B73FDA505EB /* SkeletonView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkeletonView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA164E25A8EFB07529B7B5F8BECF3B6 /* CollectionSkeletonProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionSkeletonProtocol.swift; path = Sources/Collections/CollectionSkeletonProtocol.swift; sourceTree = "<group>"; };
 		1FCD1BE47BE93EA6E0E0FEB95B8D86BC /* SkeletonView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkeletonView-umbrella.h"; sourceTree = "<group>"; };
 		20415180A3BD320C129A28816462BD03 /* SkeletonAnimationBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonAnimationBuilder.swift; path = Sources/SkeletonAnimationBuilder.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C295F47999861374DA14A8C3ADB35E2 /* SkeletonGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonGradient.swift; path = Sources/SkeletonGradient.swift; sourceTree = "<group>"; };
 		6DFEAF015782AABCAE8D9EBCF32683FA /* SkeletonView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkeletonView-prefix.pch"; sourceTree = "<group>"; };
-		70758BDD3C9260C628D990D04B067F2A /* Pods_ImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ImageLoader.framework; path = "Pods-ImageLoader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70758BDD3C9260C628D990D04B067F2A /* Pods_ImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C59C005E82C3CD5B9649A81106598A /* SkeletonDefaultConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonDefaultConfig.swift; path = Sources/SkeletonDefaultConfig.swift; sourceTree = "<group>"; };
 		715D53FD4DD68A56E9FB41CFC7E970BA /* UIView+UIApplicationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+UIApplicationDelegate.swift"; path = "Sources/Extensions/UIView+UIApplicationDelegate.swift"; sourceTree = "<group>"; };
 		7D337292B298C529E50D354A9BBEFE88 /* UITableView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+CollectionSkeleton.swift"; path = "Sources/Collections/UITableView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		8FC3452135DB613A7138746A47D1039A /* Pods-ImageLoader-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageLoader-frameworks.sh"; sourceTree = "<group>"; };
 		91D3276E2BA8BEB27080E31FD4658B5C /* SkeletonView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkeletonView.xcconfig; sourceTree = "<group>"; };
 		9320B40C03AC46C0D460449BE5172945 /* SkeletonFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonFlow.swift; path = Sources/SkeletonFlow.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B193E10CD15CCAF0E054E1A3D6F417F8 /* SkeletonLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonLayer.swift; path = Sources/SkeletonLayer.swift; sourceTree = "<group>"; };
 		BD0F3D068216A307E2B57DEB1A717D42 /* AssociationPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociationPolicy.swift; path = Sources/Helpers/AssociationPolicy.swift; sourceTree = "<group>"; };
 		C601EEEC84672C97B91D27DB8D7FEAE5 /* Pods-ImageLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImageLoader-dummy.m"; sourceTree = "<group>"; };
@@ -205,7 +205,6 @@
 				715D53FD4DD68A56E9FB41CFC7E970BA /* UIView+UIApplicationDelegate.swift */,
 				AA9305DF697BBE346895A115A4DD2122 /* Support Files */,
 			);
-			name = SkeletonView;
 			path = SkeletonView;
 			sourceTree = "<group>";
 		};
@@ -291,7 +290,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -416,6 +415,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -437,11 +437,7 @@
 				INFOPLIST_FILE = "Target Support Files/SkeletonView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SkeletonView/SkeletonView.modulemap";
 				PRODUCT_MODULE_NAME = SkeletonView;
 				PRODUCT_NAME = SkeletonView;
@@ -475,11 +471,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ImageLoader/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ImageLoader/Pods-ImageLoader.modulemap";
 				OTHER_LDFLAGS = "";
@@ -578,11 +570,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-ImageLoader/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ImageLoader/Pods-ImageLoader.modulemap";
 				OTHER_LDFLAGS = "";
@@ -617,11 +605,7 @@
 				INFOPLIST_FILE = "Target Support Files/SkeletonView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SkeletonView/SkeletonView.modulemap";
 				PRODUCT_MODULE_NAME = SkeletonView;
 				PRODUCT_NAME = SkeletonView;
