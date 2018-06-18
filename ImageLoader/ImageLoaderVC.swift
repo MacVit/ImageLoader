@@ -24,34 +24,17 @@ class ImageLoaderVC: UIViewController {
     
     @IBAction func getImageBtn(_ sender: Any) {
         
-        urlTextField.resignFirstResponder()
-        if let urlTextField = self.urlTextField.text {
-            if urlTextField.isEmpty == false {
-                startAnimateImageView(with: true)
-                
-                
-            } else {
-                showAllert(message: "Please Enter the URL to get the Image")
-            }
-        }
-    }
-    
-    func update(withImage newImage: UIImage) {
-        image = newImage
-        
-        if let urlTextField = urlTextField.text, let theURL = URL(string: urlTextField) {
-        
+        if let theInput = urlTextField.text, let theURL = URL(string: theInput) {
             ImageManager.shared.requestImage(URL: theURL) { [weak self] data, resivedImageURL in
                 guard let weakSelf = self else { return }
                 
                 DispatchQueue.main.async {
                     weakSelf.imageView.image = UIImage(data: data)
                 }
-                
             }
         }
-        
     }
+    
     
     func showAllert(message: String) {
         let alertView = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
