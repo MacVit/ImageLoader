@@ -30,8 +30,12 @@ class ImageLoaderVC: UIViewController {
                 guard let weakSelf = self else { return }
                 
                 DispatchQueue.main.async {
-                    weakSelf.imageView.image = UIImage(data: data)
-                    weakSelf.startAnimateImageView(with: false)
+                    if let theImage = UIImage(data: data) {
+                        weakSelf.imageView.image = theImage
+                        weakSelf.startAnimateImageView(with: false)
+                    } else {
+                        weakSelf.showAllert(message: "This file is not an image. Try to add another URL path")
+                    }
                 }
             }
         }
