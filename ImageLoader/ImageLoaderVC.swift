@@ -12,8 +12,9 @@ import CoreData
 
 
 class ImageLoaderVC: UIViewController {
-
-    var image: UIImage? = nil
+    
+    // MARK: - Properties
+    var lastURL: URL? = nil
     
     // MARK: - Outlets
     
@@ -25,19 +26,28 @@ class ImageLoaderVC: UIViewController {
     @IBAction func getImageBtn(_ sender: Any) {
         urlTextField.resignFirstResponder()
         startAnimateImageView(with: true)
-        if let theInput = urlTextField.text, let theURL = URL(string: theInput) {
+        if let theInput = urlTextField.text, let theURL = URL(string: theInput), UIApplication.shared.canOpenURL(theURL) {
+            if let theLastURL = lastURL {
+                ImageManager.shared.cancel(forURL: theLastURL)
+            }
+            lastURL = theURL
             ImageManager.shared.requestImage(URL: theURL) { [weak self] data, resivedImageURL in
                 guard let weakSelf = self else { return }
                 
-                DispatchQueue.main.async {
-                    if let theImage = UIImage(data: data) {
-                        weakSelf.imageView.image = theImage
-                        weakSelf.startAnimateImageView(with: false)
-                    } else {
-                        weakSelf.showAllert(message: "This file is not an image. Try to add another URL path")
+                if let theLastURL = weakSelf.lastURL, resivedImageURL == theLastURL {
+                    DispatchQueue.main.async {
+                        if let theImage = UIImage(data: data) {
+                            weakSelf.imageView.image = theImage
+                            weakSelf.startAnimateImageView(with: false)
+                        } else {
+                            weakSelf.showAllert(message: "This file is not an image. Try to add another URL path")
+                        }
                     }
                 }
             }
+        } else {
+            startAnimateImageView(with: false)
+            showAllert(message: "Invalid URL. Please Enter the correct URL")
         }
     }
     
@@ -111,13 +121,4 @@ extension ImageLoaderVC: UITextFieldDelegate {
     }
     
 }
-
-
-
-
-
-
-
-
-
 
