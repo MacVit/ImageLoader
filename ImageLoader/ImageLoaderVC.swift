@@ -23,13 +23,15 @@ class ImageLoaderVC: UIViewController {
     // MARK: - Actions
     
     @IBAction func getImageBtn(_ sender: Any) {
-        
+        urlTextField.resignFirstResponder()
+        startAnimateImageView(with: true)
         if let theInput = urlTextField.text, let theURL = URL(string: theInput) {
             ImageManager.shared.requestImage(URL: theURL) { [weak self] data, resivedImageURL in
                 guard let weakSelf = self else { return }
                 
                 DispatchQueue.main.async {
                     weakSelf.imageView.image = UIImage(data: data)
+                    weakSelf.startAnimateImageView(with: false)
                 }
             }
         }
